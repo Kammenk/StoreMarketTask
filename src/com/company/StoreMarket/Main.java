@@ -33,7 +33,7 @@ public class Main {
         silverCustomer.makesAPurchase(900);
         System.out.println("\n");
 
-        Customer goldCustomer = new Customer(new GoldCard(),1200);
+        Customer goldCustomer = new Customer(new GoldCard(),1900);
         goldCustomer.makesAPurchase(2000);
 
     }

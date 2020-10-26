@@ -22,12 +22,7 @@ public class BronzeCard extends DiscountCard {
             double discount = Math.floor(valueOfPurchase*(discountRate/100.0f) * 100) / 100;
             double total = valueOfPurchase - discount;
 
-
-            System.out.println("Purchase value: " + "$" + valueOfPurchase + "\n"
-                    + "Discount rate: " + discountRate + "%" + "\n"
-                    + "Discount: " + "$" + discount + "\n"
-                    + "Total: " + "$" + total
-            );
+            printResult(valueOfPurchase,discountRate,discount,total);
 
         } catch(Exception ex){
             System.out.println("Oops, something went wrong.");
